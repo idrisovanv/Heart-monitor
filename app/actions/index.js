@@ -50,6 +50,10 @@ export function getUserByToken(token) {
                 response.json().then(function(data) {
                     dispatch(setLogin(data.username));
                 });
+            })
+            .catch((err) => {
+                console.log('Fetch Error :-S', err);
+                dispatch(logoutUser());
             });
     };
 }
@@ -78,6 +82,10 @@ export function getDataByToken(token, sort) {
                 response.json().then(function(data) {
                     dispatch(setData(data.result));
                 });
+            })
+            .catch((err) =>{
+                console.log('Fetch Error :-S', err);
+                dispatch(logoutUser());
             });
     };
 }
