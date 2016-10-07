@@ -1,0 +1,23 @@
+.filterable-table {
+	padding: 20px;
+
+	table{
+		background-color: lightcyan;
+
+		.sorted-column{
+			cursor: pointer;
+			.glyphicon{
+				padding-right: 10px;
+				top: 3px;
+			}
+		}
+	}
+
+	.panel button{
+		margin-left: 30px;
+	}
+}
+
+.login-form{
+	width:400px;
+}
