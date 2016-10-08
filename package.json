@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "",
+    "test": "mocha --compilers js:babel-core/register --recursive",
     "start": "node server",
-    "release": "rimraf dist && webpack --config ./webpack.production.config.js --progress --profile --colors",
+    "publish": "rimraf dist && webpack --config ./webpack.production.config.js --progress --profile --colors",
     "eslint": "eslint ."
   },
   "keywords": [
@@ -40,10 +40,12 @@
     "eslint-plugin-react": "^5.0.1",
     "extract-text-webpack-plugin": "^1.0.1",
     "html-webpack-plugin": "^2.16.1",
+    "jsdom": "^9.6.0",
     "json-loader": "^0.5.4",
     "node-sass": "^3.7.0",
     "postcss-loader": "^0.9.1",
     "react-addons-test-utils": "^15.0.2",
+    "react-tools": "^0.13.3",
     "redux-devtools": "^3.2.0",
     "redux-devtools-dock-monitor": "^1.1.1",
     "redux-devtools-log-monitor": "^1.0.11",
