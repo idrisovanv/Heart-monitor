@@ -1,5 +1,4 @@
 # heart monitor
-welltory test task
 
 ## Run the app
 
